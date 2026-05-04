@@ -1,0 +1,11 @@
+# Nix/direnv environment cache
+.direnv/
+result
+result-*
+
+# OS & IDE specific
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db

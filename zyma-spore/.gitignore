@@ -1,0 +1,10 @@
+# PlatformIO build & cache
+.pio/
+
+# LSP & code completion cache
+.clang_complete
+.gcc-flags.json
+.ccls-cache/
+
+# CRITICAL: Block sensitive credentials
+include/secrets.h
