@@ -9,3 +9,12 @@ result-*
 *.log
 .DS_Store
 Thumbs.db
+
+**/.*
+**/.pio/
+**/.pnode/
+**/build/
+
+**/kombucha.db
+**/.venv/
+**/__pycache__/zyma-cortex/kombucha-cortex/.gitignore
