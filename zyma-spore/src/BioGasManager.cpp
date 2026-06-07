@@ -64,7 +64,7 @@ void BioGasManager::handle(unsigned long now) {
 }
 
 float BioGasManager::getAgsTvoc() const {
-  return _tvoc;
+  return _tvoc / 1000.0;
 }
 
 uint8_t BioGasManager::calculateCRC8(uint8_t* data, uint8_t len) {

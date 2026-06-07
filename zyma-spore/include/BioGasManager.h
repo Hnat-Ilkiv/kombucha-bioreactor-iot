@@ -31,7 +31,7 @@ public:
 
   /**
    * @brief Повертає останнє успішно зчитане значення TVOC з датчика AGS02MA.
-   * @return Значення TVOC в ppb, або -1.0f у випадку помилки читання або CRC.
+   * @return Значення TVOC в ppm, або -1.0f у випадку помилки читання або CRC.
    */
   float getAgsTvoc() const;
 

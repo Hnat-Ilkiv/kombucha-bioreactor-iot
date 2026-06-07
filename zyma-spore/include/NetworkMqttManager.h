@@ -19,7 +19,7 @@ public:
   static constexpr const char* SUFFIX_TEMP_LIQUID = "sensors/liquid_temp_c";
   static constexpr const char* SUFFIX_TEMP_AMBIENT = "sensors/ambient_temp_c";
   static constexpr const char* SUFFIX_HUMID_AMBIENT = "sensors/ambient_humid_pct";
-  static constexpr const char* SUFFIX_GAS_DIGITAL = "sensors/digital_tvoc_ppb";
+  static constexpr const char* SUFFIX_GAS_DIGITAL = "sensors/digital_tvoc_ppm";
   static constexpr const char* SUFFIX_GAS_ANALOG = "sensors/analog_ethanol_ppm";
   static constexpr const char* SUFFIX_HEATER_POWER = "sensors/heater_power_pct";
   static constexpr const char* SUFFIX_RUN_SET = "control/run_set";
