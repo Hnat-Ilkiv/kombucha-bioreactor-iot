@@ -49,7 +49,7 @@
 *   `sensors/liquid_temp_c`: Температура рідини (DS18B20), °C.
 *   `sensors/ambient_temp_c`: Температура навколишнього середовища (HTU21D), °C.
 *   `sensors/ambient_humid_pct`: Вологість навколишнього середовища (HTU21D), %.
-*   `sensors/digital_tvoc_ppb`: Концентрація летючих органічних сполук (AGS02MA), ppb.
+*   `sensors/digital_tvoc_ppm`: Концентрація летючих органічних сполук (AGS02MA), ppm.
 *   `sensors/analog_ethanol_ppm`: Розрахункова концентрація етанолу (MiCS-5524), ppm.
 *   `sensors/process_state`: Поточний стан автомата процесу (наприклад, "HEATING", "COOLING", "STABLE").
 *   `sensors/heater_power_pct`: Поточна потужність нагрівача, %.

@@ -10,31 +10,28 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         system = system;
-        config.allowUnfree = true; # Дозволяємо unfree пакети, якщо знадобляться драйвери
+        config.allowUnfree = true;
       };
     in {
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = with pkgs; [
-          # 1. Тулчейн для прошивки та розробки ESP32
           platformio
           esptool
 
-          # 2. Інструменти автоматизації оточення та ШІ
+          (python3.withPackages (ps: with ps; [
+            fastapi
+            uvicorn
+            paho-mqtt
+            pydantic
+            python-multipart
+          ]))
+
           direnv
           nix-direnv
           gemini-cli
           tree
-
-          # 3. Робота з мережею та MQTT брокером
           mosquitto
         ];
-
-        shellHook = ''
-          echo "========================================================"
-          echo "  Екосистема розробника IIoT CPS успішно активована!    "
-          echo "  Доступні команди: pio, esptool, mosquitto_sub, gemini-cli"
-          echo "========================================================"
-        '';
       };
     };
 }
